@@ -19,7 +19,7 @@ body {
   right: 50%;
   position: static;
   top: 0;
-  border-radius: 35%;
+  border-radius: 5%;
 }
 
 .leftcolumn {
@@ -30,7 +30,7 @@ body {
 .rightcolumn {
   float: left;
   width: 25%;
-  padding-left: 20px;
+  padding-left: 1px;
 }
 
 .img {
@@ -45,7 +45,8 @@ body {
   padding: 25px;
   margin-top: 20px;
   max-width: fit-content;
-  color: rgb(36, 35, 35);
+  color: rgb(52, 56, 55);
+  border-radius: 5%;
 }
 
 .row:after {
@@ -55,17 +56,18 @@ body {
 }
 
 .footer {
-  padding: 20px;
-  text-align: center;
-  background: #51b6d7;
-  margin-top: 20px;
+  padding: 0px;
+  text-align:center;
+  background: #69cced;
+  margin-top: 10px;
   left: 0;
   right: 0;
   position: fixed;
   bottom: 0;
+  border-radius: 5%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .leftcolumn,
   .rightcolumn {
     width: 100%;
