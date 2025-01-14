@@ -36,7 +36,7 @@
         font-size: 15px;
         text-align: center;
         background: rgb(84, 182, 178);
-        color: rgb(235, 16, 213);
+        color: rgb(50, 24, 48);
         max-width: fit-content;
         left: 45%;
         right: 50%;
@@ -58,6 +58,7 @@
 
       .img {
         background-image: url('https://media.istockphoto.com/id/864568096/photo/the-scenic-beauty-of-the-colorado-rocky-mountains-on-the-dallas-divide.jpg?s=612x612&w=0&k=20&c=SHvL34WRfOVspbH-cCRrLw21TCU7tHWm5J_TlBy4XH4=');
+        background-color: #6fc3df;
         width: 100%;
         max-width: 500px;
         padding: 5px;
@@ -133,7 +134,7 @@
           }
         }
 
-        .styled-button {
+      .styled-button {
           background-color: rgb(84, 182, 178); 
           border: none;
           color: rgb(46, 43, 43); 
@@ -158,7 +159,7 @@
     <div class="header">
       <h1>Best practice when using classes and ID's</h1>
     </div>
-    <a href="(https://lachlan-mcleod.github.io/)"><button class="styled-button">Back to Main</button></a>
+    <a href="index.html"><button class="styled-button">Back to Main</button></a>
     <div class="row">
       <div class="leftcolumn">
         <div class="card">
@@ -186,8 +187,14 @@
             </h3>
           </div>
         </div>
-    <div class="footer">
-      <p>© Copyright Lachlan McLeod 2025</p>
+    <div>
+
+      <footer class="footer">
+        <p>© Copyright Lachlan McLeod 2025.</p>
+        <button id="backToTopBtn" onclick="scrollToTop()">Home</button>
+    </footer>
+
+    <script src="script.js"></script>
     </div>
   </body>
 </html>
