@@ -142,15 +142,16 @@ z-index: 100;
 }
 
 .footer {
-  padding: 0px;
-  text-align:center;
-  background: #69cced;
-  margin-top: 10px;
+  text-align: center;
+  background: #000000;
+  margin-top: 0px;
+  color: whitesmoke;
   left: 0;
   right: 0;
   position: fixed;
   bottom: 0;
-  border-radius: 5%;
+  height: 50px;
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 600px) {

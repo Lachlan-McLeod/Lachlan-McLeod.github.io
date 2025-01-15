@@ -26,18 +26,18 @@
         }
 
         ul {
-          color: rgb(33, 3, 132);
+          color: rgb(26, 13, 66);
           font-size: 15px;
         }
 
-      .header {
+      .h1 {
         padding: 20px;
         border: 50px;
         margin: 10px;
-        font-size: 15px;
+        font-size: 30px;
         text-align: center;
-        background: rgb(84, 97, 182);
-        color: rgb(50, 24, 48);
+        background: rgb(255, 255, 255);
+        color: rgb(22, 1, 20);
         max-width: fit-content;
         left: 45%;
         right: 50%;
@@ -66,7 +66,7 @@
         }
 
       .card {
-        background-color: rgb(46, 15, 222);
+        background-color: rgb(20, 239, 221);
         padding: 25px;
         margin-top: 20px;
         max-width: fit-content;
@@ -80,17 +80,18 @@
         clear: both;
         }
 
-      .footer {
-        padding: 0px;
-        text-align:center;
-        background: #69cced;
-        margin-top: 10px;
-        left: 0;
-        right: 0;
-        position: fixed;
-        bottom: 0;
-        border-radius: 5%;
-        }
+        .footer {
+          text-align: center;
+          background: #000000;
+          margin-top: 0px;
+          color: whitesmoke;
+          left: 0;
+          right: 0;
+          position: fixed;
+          bottom: 0;
+          height: 50px;
+          opacity: 0.6;
+          }
 
       @media screen and (max-width: 600px) {
         .leftcolumn,
@@ -152,16 +153,19 @@
           right: 20px; 
           z-index: 100;
         }
+
+        .foot {
+          Color: whitesmoke;
+        }
         
     </style>
   </head>
  
   <body>
     <div class="header">
-      <h1>Best practice when using classes and ID's</h1>
+      <h1 class="h1">Best practice when using classes and ID's</h1>
     </div>
     <a href="/index.html"><button class="styled-button">Home</button></a>
-    <a href="blog/human-skills-blog-html-css.html"><button class="styled-button-two">Human Skills Blog</button></a>
     <div class="row">
       <div class="leftcolumn">
         <div class="card">
@@ -177,8 +181,8 @@
           <h3>ID's</h3>
           <p>The best practice I have found for using ID's is when that element is only expected to appear once. For example the main header of a website. This is because ID's are unique and do not have the repeatability of Classes. 
             Therefore, ID's should be used sparingly as they can greatly increase the time it takes to style a document and decrease efficiency across a project.
-            ID's have a higher order than classes so they do have a use case when you are wanting to override a class and apply a unique style to a single element.  </p>
-          <div></div>
+            ID's have a higher order than classes so they do have a use case when you are wanting to override a class and apply a unique style to a single element.
+          </p>
         </div>
           <div class="card">
             <h3> When to use Classes vs ID's
@@ -188,11 +192,44 @@
              </ul>
             </h3>
           </div>
-        </div>
-    <div>
+      <div>
+        <p class="foot">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          © Copyright Lachlan McLeod 2025.
+          <br>
+          <br>
+        </p>
+      </div>
 
       <footer class="footer">
-        <p>© Copyright Lachlan McLeod 2025.</p>
         <button id="backToTopBtn" onclick="scrollToTop()">Home</button>
     </footer>
 
