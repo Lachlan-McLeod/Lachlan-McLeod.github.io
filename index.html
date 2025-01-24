@@ -9,13 +9,30 @@
     </div>
   </head>
   <body>
-    <div class="header">
-      <h2>My Blog</h2>
-    </div>
-    <a href="blog/html-css.html"><button class="styled-button">Technical</button></a>
-    <a href="blog/learning-plan.html"><button class="styled-button-two">Learning Plan</button></a>
-    <a href="blog/identity-values.html"><button class="styled-button-three">Identity Values</button></a>
-    <a href="blog/te-houtaewa-template.html"><button class="styled-button-four">Te Houtaewa</button></a>
+    <nav class="navbar">
+      <h2 class=""navbar-title>Lachlan McLeod's Blog</h2>
+     
+      <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
+        &#9776;
+      </div>
+
+      <div class="navbar-links" id="navbar-links">
+        <a href="blog/html-css.html" class="navbar-button">Technical</a>
+        <a href="blog/learning-plan.html" class="navbar-button">Learning Plan</a>
+        <a href="blog/identity-values.html" class="navbar-button">Identity Values</a>
+        <a href="blog/te-houtaewa-template.html" class="navbar-button">Te Houtaewa</a>
+        <a href="https://lachlan-mcleod.github.io/javascript-cafe/" class="navbar-button">Javascript Cafe</a>
+        <a href="" class="navbar-button">Javascript Blog</a>
+      </div>
+    </nav>
+
+    <script>
+      function toggleMenu() {
+        const navbarLinks = document.getElementById('navbar-links');
+        navbarLinks.classList.toggle('active');
+      }
+    </script>
+
     <div class="row">
       <div class="leftcolumn">
         <div class="card">

@@ -97,7 +97,7 @@ z-index: 100;
   margin-top: 20px;
   max-width: fit-content;
   color: rgb(52, 56, 55);
-  border-radius: 5%;
+  border-radius: 10px;
 }
 
 .card2 {
