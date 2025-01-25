@@ -6,22 +6,120 @@
       <meta charset="UTF-8"/>
       <meta name="viewport" content="width=device-width", initial-scale="1"/>
       <link href="styles/main.css" rel="stylesheet" type="text/css"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </div>
     <div>
-      <header class="header">
-        <h3>Javascript Fundamentals Blog</h3>
-      </header>
-      <a href="https://lachlan-mcleod.github.io/"><button class="styled-button">Home</button></a>
-    </div>
+      <nav class="navbar">
     
-    <body>
-      <div>
-      <p class="card">Learning plan
-        <ol class="card2">
+        <h2 class="navbar-title">Javascript fundamentals blog</h2>
+      
+        <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
+          &#9776;
+        </div>
+      
+        <div class="navbar-links" id="navbar-links">
+          <a href="https://lachlan-mcleod.github.io/" class="navbar-button">Home</a>
+          <a href="blog/html-css.html" class="navbar-button">Technical</a>
+          <a href="blog/learning-plan.html" class="navbar-button">Learning Plan</a>
+          <a href="blog/identity-values.html" class="navbar-button">Identity Values</a>
+          <a href="blog/te-houtaewa-template.html" class="navbar-button">Te Houtaewa</a>
+          <a href="https://lachlan-mcleod.github.io/javascript-cafe/" class="navbar-button">Javascript Cafe</a>
+        </div>
+      </nav>
+  
+      <script>
+        function toggleMenu() {
+          const navbarLinks = document.getElementById('navbar-links');
+          navbarLinks.classList.toggle('active');
+        }
+      </script>
+    <br>
+    <br>
 
-         </ol>
-      </p>
     </div>
+  
+    <body>
+      <div class="container">
+      <h3>Javascript and its relationship to HTML & CSS</h3>
+        <p>Javascript does all the fancy stuff within a website. 
+          If we think of a webpage like a human body, 
+          HTML is your skeleton, it provides the framework to be built upon. 
+          Javascript is your organs, it makes you work the way you do, it governs how you function and it brings cohesion between all your body parts.
+          CSS is your skin and your features, everything that makes you beautiful :D.</p>
+      <h3>Control Flow and Loops</h3>
+        <p>Control Flow is the order that the code you have written is received within a program or client. Generally speaking code is read from top to bottom like a book. There are exceptions, much like an  asterisk in a book, to this rule for example:
+          <ul>
+            <li>Function Calls. When a function is defined, the program does not execute this immediately. It instead jumps to the function definition to then execute the function call.<br> For example:
+              <br>
+              <br>
+              <span style="color: green;"> console.log("This is executed first.");<br>
+                sayHello();
+              <br>
+              <br>
+                function sayHello() {
+                <br>
+                console.log("Hello, world!");
+                <br>
+                }
+              <br>
+              <br>
+              </span>
+                This is executed after the call.<br>
+              <br>
+              <br>
+            </li>
+            <li>A loop is essentially groundhog day. It executes over and over again according to its defined parameters. An example of a loop we can use is a while loop.<br> 
+              Example:<br> 
+              <br>
+              <span style="color: red;">
+              let energyIsLow = true;<br>
+                <br>
+              while (energyIsLow) {<br>
+                console.log("Energy is low, drink Mango Monster!");<br>
+                <br>
+                energyIsLow = false;<br>
+              }<br>
+              console.log("Energy is back to normal!");<br>
+            </span>
+            </li>
+          </ul>
+        </p>
+      <h3>The DOM</h3>
+        <p>The DOM is the Document Object Model. It is a framework of what is known as tree nodes that denote each object in a webpage. The DOM loads a document into the browser and represents it using this tree structure.<br>
+          <br>
+         Each node in the tree represents an element of the document. These elements are labelled as parent elements, child elements or grandchild elements. 
+         These basically denote how the elements sit within a page, with the "younger" elements nested inside the "older" elements.<br>
+        <br>
+        Javascript can access the "document" object. This document object in Javascript is the root object for accessing and interacting with the DOM. It provides methods and properties to manipulate content, structure and style of a web page.
+        An example of this would be using this Syntax.<br>
+        <br>
+        <ul><li><span style="color: green">.getElementById(h3);</span></li><br>
+          
+        <li>This allows you to select an element on the page by its unique id attribute and allows the direct manipulation of a specific element, in this case the h3 element.</li>
+        </ul>
+      </p>
+      <h3></h3>
+        <p>uymyumum</p>
+      <h3></h3>
+        <p>bnmcvbnbv</p>
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div>
       <p>© Copyright Lachlan McLeod 2025.
         <br>
