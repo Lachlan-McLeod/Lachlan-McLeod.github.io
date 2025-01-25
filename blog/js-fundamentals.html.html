@@ -96,14 +96,72 @@
         An example of this would be using this Syntax.<br>
         <br>
         <ul><li><span style="color: green">.getElementById(h3);</span></li><br>
-          
+
         <li>This allows you to select an element on the page by its unique id attribute and allows the direct manipulation of a specific element, in this case the h3 element.</li>
         </ul>
+        Another thing you can do is add what is known as an event listener:<br>
+        <br>
+          This will Select the button and the div elements<br>
+          <span style="color: green"> let button = document.getElementById('myButton');<br>
+          let messageDiv = document.getElementById('message'); </span><br>
+          <br>
+          This adds an event listener to the button<br>
+          <span style="color: green">.addEventListener('click', function() {<br>
+            messageDiv.textContent = "Form submitted!";<br>
+          });</span><br>
+          <br>
+          We can use these to trigger events in a page, for instance, capturing a form submission.<br>
       </p>
-      <h3></h3>
-        <p>uymyumum</p>
-      <h3></h3>
-        <p>bnmcvbnbv</p>
+      <h3>Arrays and Objects</h3>
+        <p>Arrays are essentially a way to create a list of objects and store these in a single variable. They are very useful when you want to create an ordered collection of items, 
+          for example a shopping list, and make them accessible by their position in the list.<br>
+        <br>
+        Arrays use zero-based-indexing. Basically this means that objects in an array are assigned a string value ranging from 0-X based on their position in the list, for 
+        example let cars = ['Toyota', 'Honda', 'BMW', 'Audi']; In this example Toyota would be string 0, Honda string 1 and so on so forth. So if we console.log(cars[2]) we would get a result of BMW.<br>
+        <br>
+        Objects are used to represent "something" in your code. They consist of a <span style="color: rgb(120, 104, 11)">key</span> and a <span style="color:rgb(120, 104, 11)">value</span>. 
+        They are an unordered collection of key-value pairs and commonly look something like this.<br>
+        <br>
+        <span style="color: green">
+        let person = {<br>
+          name: 'Alice',<br>
+          age: 30,<br>
+          job: 'Engineer'<br>
+        };<br>
+        </span> 
+        <br>
+        This allows us to pull out values from this Alice key. For example if we want to know Alice's job we could use dot notation which looks like this.<br>
+        <br>
+        <span style="color: green">console.log(person.job);</span><br>
+        <br>
+        This would output Engineer.<br>
+       <br>
+        </p>
+      <h3>Functions</h3>
+        <p>Functions are blocks of reuseable code, similar to classes in CSS. They can be executed when called and are very useful if you have multiple of the same elements on a page requiring functionality.It is a way of streamlining your project and gaining efficiencies.
+         They can be declared in many ways but the most common way would be something similar to this:<br>
+        <br>
+          <span style="color: green"><br>
+          function sayHello() {<br>
+            console.log("Hello, world!");<br>
+          }<br>
+          <br>
+          // Function call<br>
+          sayHello(); <br>
+          <br>
+        </span>
+          In this example the sayHello function would output Hello, world! everytime it is called.
+        <br>
+        <br>
+         </p>
+         <p>Sources:
+          <ul>
+            <li><a href="https://medium.com/@zac_heisey/objects-vs-arrays-42601ff79421" target="_blank">Objects vs Arrays on Medium</a></li>
+            <li><a href="https://www.w3schools.com/js/js_functions.asp" target="_blank">JavaScript Functions - W3Schools</a></li>
+            <li><a href="https://www.w3schools.com/js/js_htmldom.asp" target="_blank">JavaScript HTML DOM - W3Schools</a></li>
+          </ul>
+         </p>
+
       </div>
     
     
