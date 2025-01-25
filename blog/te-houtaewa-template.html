@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Stories and Legends (PAGE title) </title>
+    <title>Stories and Legends  </title>
     <meta charset="UTF-8">
     <link href="styles/main.css" rel="stylesheet" type="text/css">
   </head>
-  <a href="/index.html"><button class="styled-button">Home</button></a>
+  <nav class="navbar">
+  
+    <h2 class="navbar-title">Te Houtaewa</h2>
+    
+      <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
+        &#9776;
+      </div>
+    
+      <div class="navbar-links" id="navbar-links">
+        <a href="https://lachlan-mcleod.github.io/" class="navbar-button">Home</a>
+        <a href="https://lachlan-mcleod.github.io/blog/html-css.html" class="navbar-button">Technical</a>
+        <a href="https://lachlan-mcleod.github.io/blog/learning-plan.html" class="navbar-button">Learning Plan</a>
+        <a href="https://lachlan-mcleod.github.io/blog/identity-values.html" class="navbar-button">Identity Values</a>
+        <a href="https://lachlan-mcleod.github.io/blog/js-fundamentals.html" class="navbar-button">JS Blog</a>
+        <a href="https://lachlan-mcleod.github.io/javascript-cafe/" class="navbar-button">Javascript Cafe</a>
+      </div>
+    </nav>
+    <script>
+      function toggleMenu() {
+        const navbarLinks = document.getElementById('navbar-links');
+        navbarLinks.classList.toggle('active');
+      }
+    </script>
+        <br>
+        <br>
 
   <body>
-    <h1 class="header">The Story of Te Houtaewa (PAGE heading)</h1>
+    <h1 class="header">The Story of Te Houtaewa</h1>
     <h2 class="header">E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running over roots makes the speediest runner.</em> (Optional SUB title) </h2>
     <h3 class="header">10 November 2010</h3>
     

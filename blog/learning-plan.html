@@ -8,12 +8,33 @@
       <link href="styles/main.css" rel="stylesheet" type="text/css"/>
     </div>
     <div>
-      <header class="header">
-        <h3>Learning Plan Blog</h3>
-      </header>
-      <a href="/index.html"><button class="styled-button">Home</button></a>
-    </div>
-    
+      <nav class="navbar">
+  
+      <h2 class="navbar-title">Learning Plan blog</h2>
+      
+        <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
+          &#9776;
+        </div>
+      
+        <div class="navbar-links" id="navbar-links">
+          <a href="https://lachlan-mcleod.github.io/" class="navbar-button">Home</a>
+          <a href="https://lachlan-mcleod.github.io/blog/html-css.html" class="navbar-button">Technical</a>
+          <a href="https://lachlan-mcleod.github.io/blog/identity-values.html" class="navbar-button">Identity Values</a>
+          <a href="https://lachlan-mcleod.github.io/blog/te-houtaewa-template.html" class="navbar-button">Te Houtaewa</a>
+          <a href="https://lachlan-mcleod.github.io/blog/js-fundamentals.html" class="navbar-button">JS Blog</a>
+          <a href="https://lachlan-mcleod.github.io/javascript-cafe/" class="navbar-button">Javascript Cafe</a>
+        </div>
+      </nav>
+      <script>
+        function toggleMenu() {
+          const navbarLinks = document.getElementById('navbar-links');
+          navbarLinks.classList.toggle('active');
+        }
+      </script>
+          <br>
+          <br>
+    </head>
+
     <body>
       <div>
       <p class="card">Learning plan
