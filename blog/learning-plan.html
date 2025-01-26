@@ -9,35 +9,45 @@
     </div>
     <div>
       <nav class="navbar">
-  
-      <h2 class="navbar-title">Learning Plan blog</h2>
+    
+        <h2 class="navbar-title">Learning Plan Blog</h2>
       
         <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
           &#9776;
         </div>
       
         <div class="navbar-links" id="navbar-links">
+          <div class="navbar-sub-title">Home</div>
           <a href="https://lachlan-mcleod.github.io/" class="navbar-button">Home</a>
-          <a href="https://lachlan-mcleod.github.io/blog/identity-values.html" class="navbar-button">Identity Values</a>
-          <a href="https://lachlan-mcleod.github.io/blog/te-houtaewa-template.html" class="navbar-button">Te Houtaewa</a>
-          <a href="https://lachlan-mcleod.github.io/blog/js-fundamentals.html" class="navbar-button">JS Blog</a>
+          <div class="navbar-sub-title">Human Skills</div>
+          <a href="blog/identity-values.html" class="navbar-button">Identity Values</a>
+          <a href="blog/te-houtaewa-template.html" class="navbar-button">Te Houtaewa</a>
+          <a href="blog/emotional-intelligence.html" class="navbar-button">Emotional Intelligence</a>
+          <a href="blog/neuroplasticity.html" class="navbar-button">Neuroplasticity</a>
+          <div class="navbar-sub-title">Technical Blogs</div>
+          <a href="blog/technical.html" class="navbar-button">Technical</a>
+          <a href="blog/js-fundamentals.html" class="navbar-button">JS Blog</a>
+          <div class="navbar-sub-title">Web Apps</div>
           <a href="https://lachlan-mcleod.github.io/javascript-cafe/" class="navbar-button">Javascript Cafe</a>
         </div>
       </nav>
+  
       <script>
         function toggleMenu() {
           const navbarLinks = document.getElementById('navbar-links');
           navbarLinks.classList.toggle('active');
         }
       </script>
-          <br>
-          <br>
-    </head>
+  
+        <div style="display: flex; justify-content: center; align-items: center;">
+        <img src="mt-taranaki-two.jpg" alt="Blog Header Image" style="width:100%; max-width: 1000px; height:auto; border-radius: 15px;">
+        </div>
+        </head>
 
     <body>
-      <div>
-      <p class="card">Learning plan
-        <ol class="card2">
+      <div class="full-width-container">
+      <p>Learning plan
+        <ol>
           <li>What is your long term goal or career pathway? <br>
             My long term career goals are to become a senior developer for the company I hopefully end up working for. 
             I also want to find a company that really fits my personality. </li>
