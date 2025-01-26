@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
   font-family: 'Roboto', Arial;
   padding: 20px;
@@ -150,6 +152,8 @@ body {
   max-width: fit-content;
   color: rgb(52, 56, 55);
   border-radius: 10px;
+  font-family: 'Roboto';
+  font-size: 14px;
 }
 
 .card2 {
