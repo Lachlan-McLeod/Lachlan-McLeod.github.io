@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <div id="top">
+      <title>Te Whare Tapa Whā</title>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width", initial-scale="1"/>
+      <link href="styles/main.css" rel="stylesheet" type="text/css"/>
+    </div>
+  </head>
+  <body>
+    <nav class="navbar">
+    
+      <h2 class="navbar-title">Te Whare Tapa Whā</h2>
+    
+      <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
+        &#9776;
+      </div>
+    
+      <div class="navbar-links" id="navbar-links">
+        <div class="navbar-sub-title">Home</div>
+        <a href="https://lachlan-mcleod.github.io/" class="navbar-button">Home</a>
+        <div class="navbar-sub-title">Human Skills</div>
+        <a href="learning-plan.html" class="navbar-button">Learning Plan</a>
+        <a href="identity-values.html" class="navbar-button">Identity Values</a>
+        <a href="te-houtaewa-template.html" class="navbar-button">Te Houtaewa</a>
+        <a href="emotional-intelligence.html" class="navbar-button">Emotional Intelligence</a>
+        <a href="neuroplasticity.html" class="navbar-button">Neuroplasticity</a>
+
+
+        <div class="navbar-sub-title">Technical Blogs</div>
+        <a href="js-fundamentals.html" class="navbar-button">JS Blog</a>
+        <a href="technical.html" class="navbar-button">Technical</a>
+
+        <div class="navbar-sub-title">Web Apps</div>
+        <a href="https://lachlan-mcleod.github.io/javascript-cafe/" class="navbar-button">Javascript Cafe</a>
+
+      </div>
+    </nav>
+
+    <script>
+      function toggleMenu() {
+        const navbarLinks = document.getElementById('navbar-links');
+        navbarLinks.classList.toggle('active');
+      }
+    </script>
+
+      <div class="container-centre2">
+          <h2>Te Whare Tapa Whā</h2>
+      </div>  
+    
+    <div class="wrapper">
+      <div class="container-blog-post">
+         <h3>Sub-header</h3>
+            <p>Paragraph 1</p>
+        </div>
+      </div>
+         
+      <div class="wrapper">
+        <div class="container-blog-post">
+           <h3>Sub-header</h3>
+              <p>Paragraph 2</p>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="footer-button-container">
+            <p class="">© Copyright Lachlan McLeod 2025</p>
+            <button id="text-align=center" id="backToTopBtn" onclick="scrollToTop()">Home</button>
+          </div>
+        </footer>
+      <script src="script.js"></script>
+  </body>
+</html>
